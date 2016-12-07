@@ -99,18 +99,18 @@ toh.controller('EXGalleryController', function($scope, DataSource) {
 });
 
 toh.controller('Slidee', function($scope) {
-    $scope.myInterval = 1500;
+    $scope.myInterval = 3000;
     $scope.slides = [{
-            image: './slideImages/1.jpg'
+            image: './slideImages/one.jpg'
         },
         {
-            image: './slideImages/2.jpg'
+            image: './slideImages/two.jpg'
         },
         {
-            image: './slideImages/3.jpg'
+            image: './slideImages/three.jpg'
         },
         {
-            image: './slideImages/4.jpg'
+            image: './slideImages/four.jpg'
         }
     ];
 });
