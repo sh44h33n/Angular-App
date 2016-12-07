@@ -1,0 +1,99 @@
+body {
+    font-size: 10pt;
+    background-color:royalblue;
+    color: black;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.thumbnail {
+    height: 50px;
+    padding: 2px;
+}
+
+.large {
+    width: 760px;
+}
+
+.mainimageshell {
+    background-color: #fff;
+    border-radius: 0px;
+    float: left;
+    width: 760px;
+    padding: 0px;
+}
+
+.viewwindow {
+    width: 760px;
+    height: 450px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.fullsizelist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left .8s ease;
+    -ms-transition: left .8s ease;
+    -o-transition: left .8s ease;
+    -webkit-transition: left .8s ease;
+    -moz-transition: left .8s ease;
+}
+
+.bg {
+    background-color: #333;
+    padding: 0px;
+    border-radius: 0px;
+    float: left;
+}
+
+.thumbsshell {
+    background-color: #fff;
+    width: 760px;
+    padding: 0px;
+    border-radius: 0px;
+    float: left;
+}
+
+.thumbswrapper {
+    overflow-x: scroll;
+    width: 760px;
+    height: 70px;
+    margin: 20px auto;
+}
+
+.thumbwrapper {
+    float: auto;
+    height: 70px;
+}
+
+.captionshell {
+    margin: 0 0 0px 0px;
+    background-color: #fff;
+    width: 760px;
+    height: 25px;
+    padding: 0 0px;
+    border-radius: 0px;
+    float: center;
+    text-align: center;
+}
+
+p1 {
+    font-size: 2.5rem;
+}

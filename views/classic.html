@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/menu/classicMenuStyle.css">
+</head>
+
+<body>
+    <h3>Select a property to view images</h3>
+
+    <div class="classicView">
+        <!--<a href="#heroes/{{hero.id}}/edit" ng-repeat="hero in heroes" ng-click="callHero(hero)">{{ hero.name }}</a>-->
+        <a href="#page/{{hero.page}}" ng-repeat="hero in heroes" ng-click="callHero(hero)">{{ hero.name }}</a>
+    </div>
+
+    <div ng-include src="templateUrl"></div>
+
+
+
+    <div>
+        <div id="slides_control">
+            <div>
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}">
+                        <div class="carousel-caption">
+                            <h4>Slide {{$index+1}}</h4>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

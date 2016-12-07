@@ -1,0 +1,31 @@
+<html ng-app="tourOfHeros">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Four Seasons Resorts Maldives</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./bower_components/angular/bootstrap.css">
+
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular/ui-bootstrap-tpls.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Four Seasons Resorts Maldives Photo Gallary</h1>
+
+        <nav>
+            <a href="#dashboard">Blue View</a>
+            <a href="#classic">Silver View</a>
+        </nav>
+        <div ng-view>Menu here</div>
+    </div>
+    <script type="text/javascript" src="./src/app.js"></script>
+    <script type="text/javascript" src="./src/services.js"></script>
+    <script type="text/javascript" src="./src/controllers/DashboardController.js"></script>
+    <script type="text/javascript" src="./src/controllers/HeroEditController.js"></script>
+    <script type="text/javascript" src="./src/controllers/HeroesListController.js"></script>
+</body>
+
+</html>

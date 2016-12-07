@@ -1,0 +1,57 @@
+body {
+    font-size: 10pt;
+    background-color:royalblue;
+    color: black;
+}
+
+.top-heroes {
+    padding: 0;
+}
+
+.top-heroes a {
+    display: inline-block;
+    text-decoration: none;
+    width: calc(25% - 10px);
+    margin: 0 5px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: dodgerblue;
+    color: white;
+    border-radius: 0px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.top-heroes a:hover {
+    color: white;
+    background: #111;
+}
+
+.hero-listing {
+    display: block;
+}
+
+.container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#slides_control>div {
+    height: 200px;
+}
+
+img {
+    margin: auto;
+    width: 760px;
+}
+
+#slides_control {
+    position: relative;
+    width: 760px;
+    left: 50%;
+    top: 20px;
+    margin-left: -380px;
+}

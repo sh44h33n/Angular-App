@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Referenced as an example from by rabidGadfly.com -->
+
+<html ng-app="tourOfHeros">
+
+<head>
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script src="./try/GallaryService.js"></script>
+    <link rel="stylesheet" href="./styles/properties/pStyle.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <p1>Four Seasons Resorts Maldives Explorer</p1>
+    <div class="bg" ng-controller="EXGalleryController">
+
+        <!--    Loading all images and showing only image in the mainimageshell-->
+        <div class="mainimageshell">
+            <div class="viewwindow">
+                <!--    fullscroller for scrolling  -->
+                <ul id="fullscroller" class="fullsizelist" ng-style="listposition">
+                    <!--    all images and display them end to end -->
+                    <li ng-repeat="image in galleryData">
+                        <img id="fullsize" class="large" ng-src="{{IMAGE_LOCATION+image.image}}" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Display image information -->
+        <div class="captionshell">
+            <p class="caption">{{selected.desc}}</p>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <!--  showing the thumbnail of images-->
+        <div class="thumbsshell">
+            <div class="thumbswrapper">
+                <ul>
+                    <!--    all images and display them as thumbs -->
+                    <li ng-repeat="image in galleryData">
+                        <div class="thumbwrapper">
+                            <!--    use ng-click here calls the scrollTo function in the
+                            controller -->
+                            <a ng-href="" ng-click="scrollTo(image,$index)">
+                                <img class="thumbnail" ng-src="{{IMAGE_LOCATION+image.image}}" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
