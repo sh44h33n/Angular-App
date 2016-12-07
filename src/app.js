@@ -105,7 +105,22 @@ toh.controller('Slidee', function($scope, DataSource) {
     DataSource.get("./src/JsonImageFiles/SlideImages.json", function(data) {
 
         $scope.myInterval = 1500;
-        $scope.slides = data;
+        //$scope.slides = data;
+        $scope.slides = [{
+                image: './src/images/slides/1.jpg'
+            },
+            {
+                image: './src/images/slides/2.jpg'
+            },
+            {
+                image: './src/images/slides/3.jpg'
+            },
+            {
+                image: './src/images/slides/4.jpg'
+            }
+        ];
+
+
 
     });
 
