@@ -1,6 +1,6 @@
 body {
     font-size: 10pt;
-    background-color:royalblue;
+    background-color: royalblue;
     color: black;
 }
 
@@ -51,6 +51,7 @@ img {
 #slides_control {
     position: relative;
     width: 760px;
+    height: 400;
     left: 50%;
     top: 20px;
     margin-left: -380px;
