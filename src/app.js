@@ -48,7 +48,7 @@ toh.controller('LGGalleryController', function($scope, DataSource) {
 });
 
 toh.controller('KHGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 800;
+    var IMAGE_WIDTH = 760;
     $scope.IMAGE_LOCATION = "./src/images/kuda/";
 
     // Retrieve and set data 
@@ -65,7 +65,7 @@ toh.controller('KHGalleryController', function($scope, DataSource) {
 });
 
 toh.controller('VGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 800;
+    var IMAGE_WIDTH = 760;
     $scope.IMAGE_LOCATION = "./src/images/vovah/";
 
     // Retrieve and set data 
@@ -82,7 +82,7 @@ toh.controller('VGalleryController', function($scope, DataSource) {
 });
 
 toh.controller('EXGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 800;
+    var IMAGE_WIDTH = 760;
     $scope.IMAGE_LOCATION = "./src/images/explorer/";
 
     // Retrieve and set data 
