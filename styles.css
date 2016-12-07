@@ -37,7 +37,8 @@ nav a:hover {
 }
 
 .container {
-    width: 1000px;
+    width: 800px;
+    height: 400;
     margin-right: auto;
     margin-left: auto;
 }
