@@ -98,19 +98,15 @@ toh.controller('EXGalleryController', function($scope, DataSource) {
     };
 });
 
-toh.controller('Slidee', function($scope) {
-    $scope.myInterval = 3000;
-    $scope.slides = [{
-            image: './slideImages/one.jpg'
-        },
-        {
-            image: './slideImages/two.jpg'
-        },
-        {
-            image: './slideImages/three.jpg'
-        },
-        {
-            image: './slideImages/four.jpg'
-        }
-    ];
+toh.controller('Slidee', function($scope, DataSource) {
+    
+
+    // Retrieve and set data 
+    DataSource.get("./src/JsonImageFiles/SlideImages.json", function(data) {
+
+        $scope.myInterval = 3000;
+        $scope.slides = data;
+
+    });
+
 });
