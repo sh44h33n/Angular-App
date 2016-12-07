@@ -49,7 +49,7 @@ toh.controller('LGGalleryController', function($scope, DataSource) {
 
 toh.controller('KHGalleryController', function($scope, DataSource) {
     var IMAGE_WIDTH = 760;
-    $scope.IMAGE_LOCATION = "./src/images/kuda/";
+    $scope.IMAGE_LOCATION = "./src/images/kudaHuraa/";
 
     // Retrieve and set data 
     DataSource.get("./src/JsonImageFiles/KHimages.json", function(data) {
