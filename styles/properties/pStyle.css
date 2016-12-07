@@ -36,13 +36,15 @@ ul {
     float: left;
     width: 760px;
     padding: 0px;
+    
 }
 
 .viewwindow {
     width: 760px;
     height: 450;
-    overflow-x: control;
+    overflow-x: hidden;
     position: relative;
+    overflow-y: hidden;
 }
 
 .fullsizelist {
