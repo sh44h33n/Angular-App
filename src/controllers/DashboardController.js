@@ -6,7 +6,7 @@ angular.module('tourOfHeros').controller('DashboardController', ['$scope', 'hero
     $scope.callHero = function(hero) {
         console.log(hero.name);
     }
-   
+
 
 
 }]);
