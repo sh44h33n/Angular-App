@@ -99,7 +99,7 @@ toh.controller('EXGalleryController', function($scope, DataSource) {
 });
 
 toh.controller('Slidee', function($scope, DataSource) {
-    
+
 
     // Retrieve and set data 
     DataSource.get("./src/JsonImageFiles/SlideImages.json", function(data) {
