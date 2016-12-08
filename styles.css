@@ -40,8 +40,40 @@ nav a:hover {
     width: 500px;
     margin-right: auto;
     margin-left: auto;
+    background: darkolivegreen;
+    height: 735;
+    vertical-align: center;
 }
 
 h1 {
     font-size: 2.04rem;
+}
+
+.tmenuButtom {
+    padding: 0;
+}
+
+.menuButtom a {
+    display: inline-block;
+    text-decoration: none;
+    width: calc(18% - 10px);
+    margin: 0 5px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    background: dodgerblue;
+    color: white;
+    border-radius: 0px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.menuButtom a:hover {
+    color: white;
+    background: grey;
+}
+
+.hmenuButtom {
+    display: block;
 }

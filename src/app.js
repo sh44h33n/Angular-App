@@ -30,28 +30,29 @@ toh.config(function($routeProvider) {
         })
         .otherwise('/dashboard');
 });
+//creating controller to bind FS Landaa Images
 toh.controller('LGGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 760;
+    var IMAGE_WIDTH = 768;
     $scope.IMAGE_LOCATION = "./src/images/landaa/";
 
-    // Retrieve and set data 
+    // Retrieving and creating image array using json files
     DataSource.get("./src/JsonImageFiles/LGimages.json", function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
     });
 
-    // Scroll to appropriate position based on image index and width
+    // Scrolling images to index position
     $scope.scrollTo = function(image, ind) {
         $scope.listposition = { left: (IMAGE_WIDTH * ind * -1) + "px" };
         $scope.selected = image;
     };
 });
-
+////creating controller to bind FS Kuda huraa Images
 toh.controller('KHGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 760;
+    var IMAGE_WIDTH = 768;
     $scope.IMAGE_LOCATION = "./src/images/kuda/";
 
-    // Retrieve and set data 
+    // Retrieving and creating image array using json files
     DataSource.get("./src/JsonImageFiles/KHimages.json", function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
@@ -63,12 +64,12 @@ toh.controller('KHGalleryController', function($scope, DataSource) {
         $scope.selected = image;
     };
 });
-
+//creating controller to bind FS Vovah Images
 toh.controller('VGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 760;
+    var IMAGE_WIDTH = 768;
     $scope.IMAGE_LOCATION = "./src/images/vovah/";
 
-    // Retrieve and set data 
+    // Retrieving and creating image array using json files
     DataSource.get("./src/JsonImageFiles/KHimages.json", function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
@@ -80,12 +81,12 @@ toh.controller('VGalleryController', function($scope, DataSource) {
         $scope.selected = image;
     };
 });
-
+//creating controller to bind FS Explorer Images
 toh.controller('EXGalleryController', function($scope, DataSource) {
-    var IMAGE_WIDTH = 760;
+    var IMAGE_WIDTH = 768;
     $scope.IMAGE_LOCATION = "./src/images/explorer/";
 
-    // Retrieve and set data 
+    // Retrieving and creating image array using json files
     DataSource.get("./src/JsonImageFiles/EXimages.json", function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
@@ -101,27 +102,27 @@ toh.controller('EXGalleryController', function($scope, DataSource) {
 toh.controller('Slidee', function($scope, DataSource) {
 
 
-    // Retrieve and set data 
-    DataSource.get("./src/JsonImageFiles/SlideImages.json", function(data) {
-
-        $scope.myInterval = 1500;
-        //$scope.slides = data;
-        $scope.slides = [{
-                image: './src/images/slides/1.jpg'
-            },
-            {
-                image: './src/images/slides/2.jpg'
-            },
-            {
-                image: './src/images/slides/3.jpg'
-            },
-            {
-                image: './src/images/slides/4.jpg'
-            }
-        ];
+    // Retrieving images from directory in to slide array;
 
 
+    $scope.myInterval = 1500;
+   
+    $scope.slides = [{
+            image: './src/images/slides/1.jpg'
+        },
+        {
+            image: './src/images/slides/2.jpg'
+        },
+        {
+            image: './src/images/slides/3.jpg'
+        },
+        {
+            image: './src/images/slides/4.jpg'
+        }
+    ];
 
-    });
+
+
+
 
 });
