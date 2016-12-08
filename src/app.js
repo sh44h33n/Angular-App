@@ -42,8 +42,8 @@ toh.controller('LGGalleryController', function($scope, DataSource) {
     });
 
     // Scrolling images to index position
-    $scope.scrollTo = function(image, ind) {
-        $scope.listposition = { left: (IMAGE_WIDTH * ind * -1) + "px" };
+    $scope.scrollTo = function(image, index) {
+        $scope.listposition = { left: (IMAGE_WIDTH * index * -1) + "px" };
         $scope.selected = image;
     };
 });
@@ -59,8 +59,8 @@ toh.controller('KHGalleryController', function($scope, DataSource) {
     });
 
     // Scroll to appropriate position based on image index and width
-    $scope.scrollTo = function(image, ind) {
-        $scope.listposition = { left: (IMAGE_WIDTH * ind * -1) + "px" };
+    $scope.scrollTo = function(image, index) {
+        $scope.listposition = { left: (IMAGE_WIDTH * index * -1) + "px" };
         $scope.selected = image;
     };
 });
@@ -93,8 +93,8 @@ toh.controller('EXGalleryController', function($scope, DataSource) {
     });
 
     // Scroll to appropriate position based on image index and width
-    $scope.scrollTo = function(image, ind) {
-        $scope.listposition = { left: (IMAGE_WIDTH * ind * -1) + "px" };
+    $scope.scrollTo = function(image, index) {
+        $scope.listposition = { left: (IMAGE_WIDTH * index * -1) + "px" };
         $scope.selected = image;
     };
 });
@@ -106,7 +106,7 @@ toh.controller('Slidee', function($scope, DataSource) {
 
 
     $scope.myInterval = 1500;
-   
+
     $scope.slides = [{
             image: './src/images/slides/1.jpg'
         },
