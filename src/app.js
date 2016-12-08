@@ -11,19 +11,16 @@ toh.factory('DataSource', ['$http', function($http) {
 }]);
 toh.config(function($routeProvider) {
     $routeProvider
-        .when('/dashboard', {
+        .when('/dashboard', { // creating routing to load dashboard menu
             templateUrl: './views/dashboard.html',
             controller: 'DashboardController'
         })
-        .when('/classic', {
+        .when('/classic', { // creating routinf to load classic menu
             templateUrl: './views/classic.html',
             controller: 'HeroesListController'
         })
-        .when('/heroes/:hero/edit', {
-            templateUrl: './views/subview.html',
-            controller: 'HeroEditController'
-        })
-        .when('/page/:page', {
+
+    .when('/page/:page', { //routing to pages from menu created from array
             templateUrl: function(params) {
                 return 'views/' + params.page + '.html'
             }
@@ -107,7 +104,7 @@ toh.controller('Slidee', function($scope, DataSource) {
 
     $scope.myInterval = 1500;
 
-    $scope.slides = [{
+    $scope.slides = [{// Image array for slide show
             image: './src/images/slides/1.jpg'
         },
         {

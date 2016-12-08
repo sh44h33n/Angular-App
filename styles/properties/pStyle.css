@@ -30,7 +30,7 @@ ul {
     width: 768px;
 }
 
-.mainimageshell {
+.mainimageview {
     background-color: #fff;
     border-radius: 0px;
     float: left;
@@ -64,7 +64,7 @@ ul {
     float: left;
 }
 
-.thumbsshell {
+.thumbsview {
     background-color: #fff;
     width: 768px;
     padding: 0px;
@@ -84,7 +84,7 @@ ul {
     height: 70px;
 }
 
-.captionshell {
+.captionsview {
     margin: 0 0 0px 0px;
     background-color: #fff;
     width: 768px;

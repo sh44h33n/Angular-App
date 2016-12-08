@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Referenced as an example from by rabidGadfly.com -->
+
 
 <html ng-app="tourOfHeros">
 
 <head>
     <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
-    <script src="./try/GallaryService.js"></script>
+
     <link rel="stylesheet" href="./styles/properties/pStyle.css">
 </head>
 
@@ -14,12 +14,14 @@
     <p1>Four Seasons Resorts Maldives Explorer</p1>
     <div class="bg" ng-controller="EXGalleryController">
 
-        <!--    Loading all images and showing only image in the mainimageshell-->
-        <div class="mainimageshell">
+        <!--
+            Creating class mainimageshell to load all the images from array and use overflow control to hide images accept the current one.
+           -->
+        <div class="mainimageview">
             <div class="viewwindow">
-                <!--    fullscroller for scrolling  -->
+
                 <ul id="fullscroller" class="fullsizelist" ng-style="listposition">
-                    <!--    all images and display them end to end -->
+                    <!--    iterating and reading all images  -->
                     <li ng-repeat="image in galleryData">
                         <img id="fullsize" class="large" ng-src="{{IMAGE_LOCATION+image.image}}" />
                     </li>
@@ -27,22 +29,21 @@
             </div>
         </div>
 
-        <!-- Display image information -->
-        <div class="captionshell">
+        <!-- Area to Show current images description -->
+        <div class="captionsview">
             <p class="caption">{{selected.desc}}</p>
         </div>
 
         <div style="clear:both;"></div>
 
-        <!--  showing the thumbnail of images-->
-        <div class="thumbsshell">
+        <!--   creating thum view area. -->
+        <div class="thumbsview">
             <div class="thumbswrapper">
                 <ul>
-                    <!--    all images and display them as thumbs -->
+                    <!--    Reading in all thumb images -->
                     <li ng-repeat="image in galleryData">
                         <div class="thumbwrapper">
-                            <!--    use ng-click here calls the scrollTo function in the
-                            controller -->
+                            <!--   calling the scrollTo function  -->
                             <a ng-href="" ng-click="scrollTo(image,$index)">
                                 <img class="thumbnail" ng-src="{{IMAGE_LOCATION+image.image}}" />
                             </a>
