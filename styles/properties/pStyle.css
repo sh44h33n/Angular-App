@@ -41,7 +41,7 @@ ul {
 
 .viewwindow {
     width: 768px;
-    height: 450;
+    height: 435;
     overflow-x: hidden;
     position: relative;
 }
@@ -76,7 +76,7 @@ ul {
     overflow-x: scroll;
     width: 768px;
     height: 107px;
-    margin: 20px auto;
+    margin: 19 0;
 }
 
 .thumbwrapper {
@@ -85,14 +85,18 @@ ul {
 }
 
 .captionsview {
-    margin: 0 0 0px 0px;
+    margin: 0px 0px;
     background-color: #fff;
     width: 768px;
-    height: 20px;
+    height: 0px;
     padding: 0 0px;
     border-radius: 0px;
     float: center;
     text-align: center;
+}
+
+.caption {
+    vertical-align: center;
 }
 
 p1 {

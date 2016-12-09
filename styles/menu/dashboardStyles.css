@@ -4,11 +4,11 @@ body {
     color: black;
 }
 
-.top-heroes {
+.dashboard {
     padding: 0;
 }
 
-.top-heroes a {
+.dashboard a {
     display: inline-block;
     text-decoration: none;
     width: calc(25% - 10px);
@@ -24,7 +24,7 @@ body {
     transition: all 0.25s ease;
 }
 
-.top-heroes a:hover {
+.dashboard a:hover {
     color: white;
     background: grey;
 }
