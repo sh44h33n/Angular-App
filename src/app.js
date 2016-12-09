@@ -1,4 +1,4 @@
-var toh = angular.module('tourOfHeros', ['ngRoute', 'ui.bootstrap']);
+var toh = angular.module('fsAlbum', ['ngRoute', 'ui.bootstrap']);
 toh.factory('DataSource', ['$http', function($http) {
     return {
         get: function(fileName, callback) {

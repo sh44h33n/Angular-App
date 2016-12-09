@@ -1,4 +1,4 @@
-angular.module('tourOfHeros').service('hotelService', function($filter) {
+angular.module('fsAlbum').service('hotelService', function($filter) {
     var hotels = [{
             id: 1,
             name: "FS Landaa Giraavaru",

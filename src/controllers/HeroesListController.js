@@ -1,4 +1,4 @@
-angular.module('tourOfHeros').controller('HeroesListController', ['$scope', 'hotelService', function($scope, hotelService) {
+angular.module('fsAlbum').controller('HeroesListController', ['$scope', 'hotelService', function($scope, hotelService) {
     var ctrl = this;
 
     $scope.hotels = hotelService.getTopHotels();
