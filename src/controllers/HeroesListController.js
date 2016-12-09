@@ -1,5 +1,12 @@
-angular.module('tourOfHeros').controller('HeroesListController', ['$scope', 'heroService', function($scope, heroService) {
-    $scope.heroes = heroService.getAllHeroes();
+angular.module('tourOfHeros').controller('HeroesListController', ['$scope', 'hotelService', function($scope, hotelService) {
+    var ctrl = this;
+
+    $scope.hotels = hotelService.getTopHotels();
+
+    $scope.callHotel = function(hotel) {
+        console.log(hotel.name);
+    }
+
 
 
 }]);

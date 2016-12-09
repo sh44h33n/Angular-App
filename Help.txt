@@ -1,4 +1,0 @@
->npm install -g bower
->bower init
->bower install angular angular-route --save
-

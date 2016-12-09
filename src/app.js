@@ -67,7 +67,7 @@ toh.controller('VGalleryController', function($scope, DataSource) {
     $scope.IMAGE_LOCATION = "./src/images/vovah/";
 
     // Retrieving and creating image array using json files
-    DataSource.get("./src/JsonImageFiles/KHimages.json", function(data) {
+    DataSource.get("./src/JsonImageFiles/VPimages.json", function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
     });
@@ -104,7 +104,7 @@ toh.controller('Slidee', function($scope, DataSource) {
 
     $scope.myInterval = 1500;
 
-    $scope.slides = [{// Image array for slide show
+    $scope.slides = [{ // Image array for slide show
             image: './src/images/slides/1.jpg'
         },
         {

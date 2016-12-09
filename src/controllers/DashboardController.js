@@ -1,10 +1,10 @@
-angular.module('tourOfHeros').controller('DashboardController', ['$scope', 'heroService', function($scope, heroService) {
+angular.module('tourOfHeros').controller('DashboardController', ['$scope', 'hotelService', function($scope, hotelService) {
     var ctrl = this;
 
-    $scope.heroes = heroService.getTopHeroes();
+    $scope.hotels = hotelService.getTopHotels();
 
-    $scope.callHero = function(hero) {
-        console.log(hero.name);
+    $scope.callHotel = function(hotel) {
+        console.log(hotel.name);
     }
 
 

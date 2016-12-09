@@ -1,43 +1,49 @@
 [{
-        "title": "",
+        "title": "N/A",
         "id": "ED02-0185-01",
         "desc": "Vovah - showcasing the natural beauty of maldives",
-        "image": "1.jpeg"
+        "image": "1.jpg"
     },
     {
         "title": "",
         "id": "ED03-0078-1",
-        "desc": "Experience the 7 star luxury service with four seasons.",
+        "desc": "Experience the 7 star luxury service with four seasons",
         "image": "2.jpg"
     },
     {
         "title": "",
         "id": "EC03-0154-3",
-        "desc": "Experience cruising on Traditional dhoani",
+        "desc": "Beautiful Natural island - Perfect for Wedding",
         "image": "3.jpg"
     },
     {
         "title": "",
         "id": "ED05-0082-03",
-        "desc": "Awesome water rooms - Floating in nature",
+        "desc": "Your very own private space for parties and celebrations.",
         "image": "4.jpg"
     },
     {
         "title": "",
         "id": "EC05-0090-19",
-        "desc": "Best snorkeing and diving experience in private setting",
+        "desc": "Experience the best Underwater Beauty",
         "image": "5.jpg"
     },
     {
         "title": "",
         "id": "ED06-0208-3",
-        "desc": "It is yout private Island",
+        "desc": "Experience the 7 star luxury service with four seasons",
         "image": "6.jpg"
     },
     {
         "title": "",
         "id": "ED06-0208-1",
-        "desc": "Beautiful Natural island - Perfect for Wedding ",
+        "desc": "Luxury private suites - state of art finishinig",
         "image": "7.jpg"
+    },
+    {
+        "title": "",
+        "id": "ED06-0208-1",
+        "desc": "A floating paradise on Indian Ocean",
+        "image": "8.jpg"
     }
 ]

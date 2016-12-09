@@ -1,5 +1,5 @@
-angular.module('tourOfHeros').service('heroService', function($filter) {
-    var heroes = [{
+angular.module('tourOfHeros').service('hotelService', function($filter) {
+    var hotels = [{
             id: 1,
             name: "FS Landaa Giraavaru",
             page: 'one'
@@ -22,23 +22,23 @@ angular.module('tourOfHeros').service('heroService', function($filter) {
     ];
 
     return {
-        getTopHeroes: function() {
-            return heroes;
+        getTopHotels: function() {
+            return hotels;
         },
 
-        getHero: function(id) {
+        getHotel: function(id) {
             id = parseInt(id);
-            var hero = $filter('filter')(heroes, { id: id }, true);
+            var hotel = $filter('filter')(hotels, { id: id }, true);
 
-            if (hero.length) {
-                return hero[0];
+            if (hotel.length) {
+                return hotel[0];
             } else {
                 return {};
             }
         },
 
         getAllHeroes: function() {
-            return heroes;
+            return hotels;
         }
     }
 });
