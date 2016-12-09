@@ -40,7 +40,7 @@ nav a:hover {
     width: 500px;
     margin-right: auto;
     margin-left: auto;
-    background: darkolivegreen;
+    background: silver;
     height: 735;
     vertical-align: center;
     padding-top: 5;
@@ -80,7 +80,7 @@ h1 {
 }
 
 .header {
+    text-align: center;
+    font-size: 37.5px;
     color: dodgerblue;
-    font-size: 3.7rem;
-    
 }
